@@ -1,15 +1,18 @@
 [tool.poetry]
-name = "app"
-version = "0.1.0"
-description = ""
-authors = ["Your Name <you@example.com>"]
+name = "swwwitch"
+version = "1.0.0"
+description = "My personal script to change wallpapers."
+authors = ["Noor Mkdad <alph4nir@riseup.net>"]
 license = "MIT"
 readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.11"
 
+[tool.poetry.scripts]
+swwwitch = "swwwitch.main:start"
 
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
+
