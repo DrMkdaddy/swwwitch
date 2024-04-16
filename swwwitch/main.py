@@ -3,10 +3,10 @@
 from pathlib import Path
 import os
 import subprocess
-import typing
+from typing import List
 
 WALLPAPER_HOME = Path(os.environ["HOME"]) / ".wallpapers"
-PathGroup = list[Path]
+PathGroup = List[Path]
 
 
 class Wallpapers:
