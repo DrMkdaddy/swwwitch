@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "swwwitch"
-version = "1.0.0"
+version = "1.0.1"
 description = "My personal script to change wallpapers."
 authors = ["Noor Mkdad <alph4nir@riseup.net>"]
 license = "MIT"
