@@ -19,10 +19,10 @@
     flake-utils.lib.eachDefaultSystem (system: let
       # see https://github.com/nix-community/poetry2nix/tree/master#api for more functions and examples.
       pkgs = nixpkgs.legacyPackages.${system};
-      inherit (poetry2nix.lib.mkPoetry2Nix {inherit pkgs;}) mkPoetryScriptsPackage;
+      inherit (poetry2nix.lib.mkPoetry2Nix {inherit pkgs;}) mkPoetryApplication;
     in {
       packages = {
-        swwwitch = mkPoetryScriptsPackage {projectDir = self;};
+        swwwitch = mkPoetryApplication {projectDir = self;};
         default = self.packages.${system}.swwwitch;
       };
 
