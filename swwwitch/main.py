@@ -73,6 +73,7 @@ class Wallpapers:
 
 
 def start():
+    """Runs the programs."""
     wallpapers: Wallpapers = Wallpapers(WALLPAPER_HOME)
     next_wallpaper: Path = wallpapers.get_next_wall()
     wallpapers.new_wallpaper(next_wallpaper, 244, "outer", 0.854, 0.977, 1)
